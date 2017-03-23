@@ -141,12 +141,14 @@ def question_2():
     f_t = lambda b,s,c: tsettlin_f(b, s, c)
     max_states = 50
     target_accuracy = 0.95
-    C = [0, 0.05, 0.7]
+    C = [0, 0.6, 0.8]
     C_T = [0, C[1]/2, C[2]/2]
-    N = (p_1_bsearch(max_states, target_accuracy, C))
+    N = (p_1_bsearch(max_states, target_accuracy, C_T))
 
     print("# Question 2\n## Testing Krylov with C = [{0:0.3f},{1:0.3f}]".format(C[1], C[2]))
     simulation(f, g, C, N)
+
+    N = (p_1_bsearch(max_states, target_accuracy, C_T))
 
     print("# Question 2\n## Testing Tsettlin with C = [{0:0.3f},{1:0.3f}]".format(C_T[1], C_T[2]))
     simulation(f_t, g, C_T, N)
@@ -154,5 +156,5 @@ def question_2():
 def question_3():
     pass
 
-question_1()
+#question_1()
 question_2()
