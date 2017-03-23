@@ -156,5 +156,5 @@ def question_2():
 def question_3():
     pass
 
-#question_1()
+question_1()
 question_2()
