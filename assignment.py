@@ -142,6 +142,6 @@ def question_3():
         f.write("{0:1.2f},{1:1.4f},\"({2:1.4f},{3:1.4f})\",{4:1.2f}\n".format(C[1], reward, results[0], results[1], results[2]))
         C[1] += 0.1
     f.close()
-# question_1()
-# question_2()
+question_1()
+question_2()
 question_3()
